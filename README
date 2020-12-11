@@ -1,0 +1,85 @@
+
+/*                                                                      
+ *
+ * README - for Sorting Algorithms from the Experimental Parallel 
+ *          Algorithmics (EXPAR) Project
+ *
+ * Authors:             David R. Helman
+ *                      David A. Bader
+ *                      Joseph F. Ja'Ja'
+ *                      
+ * Version:             1.0
+ * Creation Date:       August 15, 1996
+ * Filename:            README
+ * History:
+ */
+
+
+This package consists of the following four directories:
+
+  (1) - ran_i_sort -> source code for sorting integers by a novel
+		      variation of (random) sample sort. 
+		      
+  (2) - ran_d_sort -> source code for sorting double precision
+		      floating point numbers by a novel variation
+		      of (random) sample sort.
+
+  (3) - reg_i_sort -> source code for sorting integers by a new
+		      deterministic algorithm based on the
+		      regular sampling approach.
+
+  (4) - reg_d_sort -> source code for sorting double precision
+		      floating point numbers by a new deterministic
+		      algorithm based on the regular sampling approach.
+		      
+
+All this code was written in the Split-C parallel language from UC Berkeley. 
+This code has been tested on the Thinking Machines CM-5, the IBM SP-2, 
+and the Cray Research T3D.
+
+**********************************************************************
+
+   Split-C is available through UC Berkeley
+   (http://http.cs.berkeley.edu/projects/parallel/castle/split-c/),
+   sending email to Prof. Culler <culler@cs.berkeley.edu>,
+   or the Split-C mailing list <split-c@boing.cs.berkeley.edu>.
+
+**********************************************************************
+
+	      EXPERIMENTAL PARALLEL ALGORITHMICS (EXPAR)
+	       http://www.umiacs.umd.edu/research/EXPAR
+
+   Related research reports describing these algorithms and related
+   algorithms, as well as implementation and performance, are as 
+   follows:
+
+
+**  Parallel Algorithms for Personalized Communication and Sorting  **            
+**                   With an Experimental Study                     **               
+**                       (Extended Abstarct)                        **
+**             [by D.R. Helman, D.A. Bader and J. JaJa]             **                         
+
+**             A Randomized Parallel Sorting Algorithm              **            
+**                   With an Experimental Study                     **               
+**             [by D.R. Helman, D.A. Bader and J. JaJa]             **                         
+
+**             A New Deterministic Parallel Sorting Algorithm       **            
+**                   With an Experimental Evaluation                **               
+**             [by D.R. Helman, J. JaJa and D.A. Bader]             **                         
+
+** Practical Parallel Algorithms for Personalized Communication and **
+**                       Integer Sorting                            **
+**             [by D.A. Bader, D.R. Helman, and J. JaJa]            **
+
+**********************************************************************
+
+Installation:
+0. Install Split-C on parallel platform
+1. If you are using an SP-2, a T3D, or a CM5, the appropriate Makefile 
+   is already included in this package. Simply copy machine X's 
+   Makefile.X to Makefile.  Otherwise, you must write an apropriate
+   Makefile for your platform.
+2. Compile and link with command "gmake"
+
+**********************************************************************
+

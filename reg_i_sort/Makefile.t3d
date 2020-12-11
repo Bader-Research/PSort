@@ -1,0 +1,12 @@
+# Use gmake!
+TIC_REGISTRY:=
+DIR_SPLITCC 	:= /silo/dbader/sc/sc2.6
+DIR_LIBSPLITC 	:= /silo/dbader/sc/libsplit-c/13
+
+SC_TARGET	:= psort
+MPL	:= T3D
+MACHINE := T3D
+XCFLAGS := -O4 -D${MACHINE} 
+
+include ${DIR_LIBSPLITC}/Make.split-c
+

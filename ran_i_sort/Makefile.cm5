@@ -1,0 +1,37 @@
+
+# Use gmake!
+TIC_REGISTRY:=
+TARGET := psort
+MACHINE := CM5
+
+MPL := CMMD
+
+CFLAGS := -O4 -D${MACHINE} 
+
+CASTLE  := /cm5/split-c
+include ${CASTLE}/include/split-c/Make.split-c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
